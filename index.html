@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Terminal Website</title>
+    <title>Terminal | @iamasit07</title>
 </head>
 <body>
-    <div class="terminal-container">
-        <div class="terminal-content">
-            <div class="terminal-welcome-message">
-                <p>Welcome, I present you my first project</p>
-                <p>I hope you enjoy it, make sure you explore it to you your heart's content</p>
-                <hr/>
-                <p>Note : Make sure to crack the code and find your surprise</p>
-                <div class="terminal-input-line">
-                    <span class="directory">guest@iamasit07: </span>
-                    <span class="success">~</span>
-                    <label for="terminalInput"></label><input type="text"
-                                                              id="terminalInput"
-                                                              class="terminal-input"
-                                                              autocomplete="off"
-                    />
+    <!-- Main section which consist the whole page -->
+    <section>
+        <!-- Div that hold the terminal as a tab/floating window -->
+        <div class="terminal-container">
+            <!-- Div that contains the writing content of the website-->
+            <div class="terminal-content">
+                <!-- article that repeats itself again and again for input -->
+                <div class="termianl-block">
+                    <div class="terminal-input">
+                        <label class="text">
+                            <span class="terminal-user">guest@iamasit07:~$</span>
+                        </label>
+                        <input class="input-text" id="input" type="text" autofocus>
+                        <span class="terminal-text"></span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="output-text" id="output"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <!-- Footer for promotion and links to my socials -->
+    <footer>
+
+    </footer>
+    <script src="function.js"></script>
 </body>
 </html>
