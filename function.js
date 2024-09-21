@@ -1,12 +1,53 @@
-const input = document.getElementById('input');
-const output = document.getElementById('output');
+const content = document.getElementById('content');
+content.innerHTML = intro;
 
-function values(event){
-    if(event.key === 'Enter') {
-        if (input.value.toLowerCase() === 'help') {
-            output.innerHTML = 'this is for testing purposes<br>';
-        }
+const cases = (inputVal) => {
+    switch (inputVal){
+        case 'exit':
+            window.close();
+            break;
+        case 'banner':
+            content.innerHTML += banner.join('');
+            break;
+        case 'help':
+            content.innerHTML += help.join('');
+            break;
+        case 'whoisasit07':
+            content.innerHTML += whoisasit.join('');
+            break;
+        case 'whoami':
+            content.innerHTML += whoami.join('');
+            break;
+        case 'social':
+            content.innerHTML += social.join('');
+            break;
+        case 'projects':
+            content.innerHTML += projects.join('');
+            break;
+        case 'email':
+            content.innerHTML += email.join('');
+            break;
+        case 'secret':
+            content.innerHTML += secret.join('');
+            break;
+        case 'clear':
+            content.innerHTML = '';
+            break;
     }
 }
 
-input.addEventListener('keypress', values);
+content.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        let inputVal = document.getElementById('input').value.toLowerCase();
+        content.innerHTML += '<br>';
+        cases(inputVal);
+        addtext(intro);
+        document.getElementById('input').value = '';
+        content.innerHTML += '<br>' + intro;
+    }
+});
+
+function addtext(inputstring){
+    var text = document.getElementById('content');
+    text.scrollTop = text.scrollHeight;
+}
