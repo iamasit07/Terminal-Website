@@ -1,53 +1,72 @@
 const content = document.getElementById('content');
-content.innerHTML = intro;
+const command = document.getElementById('command');
+command.innerHTML = intro;
 
 const cases = (inputVal) => {
     switch (inputVal){
-        case 'exit':
-            window.close();
-            break;
-        case 'banner':
-            content.innerHTML += banner.join('');
-            break;
         case 'help':
-            content.innerHTML += help.join('');
-            break;
-        case 'whoisasit07':
-            content.innerHTML += whoisasit.join('');
-            break;
-        case 'whoami':
-            content.innerHTML += whoami.join('');
+            loopLines(help);
             break;
         case 'social':
-            content.innerHTML += social.join('');
+            loopLines(social);
             break;
         case 'projects':
-            content.innerHTML += projects.join('');
+            loopLines(projects);
             break;
         case 'email':
-            content.innerHTML += email.join('');
+            loopLines(email);
             break;
         case 'secret':
-            content.innerHTML += secret.join('');
+            loopLines(secret);
+            break;
+        case 'banner':
+            loopLines(banner);
+            break;
+        case 'sudo':
+            loopLines(sudo);
+            break;
+        case 'exit':
+            loopLines(exit);
             break;
         case 'clear':
             content.innerHTML = '';
             break;
+        default:
+            loopLines(error);
+            break;
     }
 }
 
-content.addEventListener('keypress', (e) => {
+command.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         let inputVal = document.getElementById('input').value.toLowerCase();
         content.innerHTML += '<br>';
+        content.innerHTML += '<span>guest@terminal:~$ </span>' + inputVal;
         cases(inputVal);
-        addtext(intro);
         document.getElementById('input').value = '';
-        content.innerHTML += '<br>' + intro;
     }
 });
 
-function addtext(inputstring){
-    var text = document.getElementById('content');
-    text.scrollTop = text.scrollHeight;
+function addText(text){
+    let t = "";
+    for(let i = 0;i<text.length;i++){
+        if(text.charAt(i) === " " && text.charAt(i+1) === " "){
+            t += '&nbsp;&nbsp;'
+            i++;
+        }
+        else
+            t += text.charAt(i);
+    }
+    setTimeout(function(){
+        let next = document.createElement("p");
+        next.innerHTML = t;
+        next.className = 'text-style';
+        content.appendChild(next);
+    },500);
+}
+
+function loopLines(text){
+    text.forEach(function (line){
+        addText(line);
+    });
 }
