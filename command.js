@@ -9,100 +9,94 @@ let intro  = '<span>guest@terminal:~$ </span><input class="user-input" type="tex
 
 help = [
     "<br>",
-    "whoisasit07      Who is Asit Upadhyay? ",
-    "whoami           Who am I?",
-    "social           Display all Social Networks",
-    "projects         Display all Projects",
-    "secret           Find the \"Easter Egg\"",
-    "help             Display all commands",
-    "email            Display my email",
-    "clear            Clear the terminal",
-    "banner           Display the banner",
-    "exit             Close the terminal",
+    "<span class='commands'>whoisasit07</span>              Who is Asit Upadhyay? ",
+    "<span class='commands'>whoami</span>                   Who am I?",
+    "<span class='commands'>social</span>                   Display all Social Networks",
+    "<span class='commands'>projects</span>                 Display all Projects",
+    "<span class='commands'>secret</span>                   Find the \"Easter Egg\"",
+    "<span class='commands'>help</span>                     Display all commands",
+    "<span class='commands'>email</span>                    Display my email",
+    "<span class='commands'>clear</span>                    Clear the terminal",
+    "<span class='commands'>banner</span>                   Display the banner",
+    "<span class='commands'>exit</span>                     Close the terminal",
     "<br>"
 ]
 
 whoisasit = [
     "<br>",
-    "Hi, I am Asit Upadhyay, a Full Stack Developer from India.",
-    "I am a Computer Science student at the Meerut Institute of Engineering & Technology. I am passionate about Web Development, Problem Solving and Algorithms." +
-    "I am learning JavaScript at the time I created this side, and its a great way to learn by implementing. I hope you enjoy my peoject.",
-    "*Try and find the Easter Egg*",
+    "<span class='para padded'>Hi, I am Asit Upadhyay, a Full Stack Developer from India.</span>",
+    "<span class='para padded'>I am a Computer Science student at the Meerut Institute of Engineering & Technology. I am passionate about Web Development, Problem Solving and Algorithms.</span>",
+    "<span class='para padded'>I am learning JavaScript at the time I created this side, and its a great way to learn by implementing. I hope you enjoy my peoject.</span>",
+    "<span class='para padded'>*Try and find the Easter Egg*</span>",
     "<br>"
 ]
 
 whoami = [
     "<br>",
-    "The question \"Who am I?\" is not really meant to get an answer, the question \"Who am I?\" is meant to dissolve the questioner",
+    "<span class='para padded'>The question \"Who am I?\" is not really meant to get an answer, the question \"Who am I?\" is meant to dissolve the questioner</span>",
     "<br>"
 ]
 
 social = [
     "<br>",
-    "Instagram    :      " + instagram,
-    "LinkedIn     :      " + linkedin,
-    "GitHub       :      " + github,
-    "Codeforces   :      " + codeforces,
-    "LeetCode     :      " + leetcode,
+    "<span class='commands'>Instagram</span>            :         <a class='link' href='" + instagram + "' target='_blank'>who_is_asit07</a>",
+    "<span class='commands'>LinkedIn</span>             :         <a class='link' href='" + linkedin + "' target='_blank'>Asit Upadhyay</a>",
+    "<span class='commands'>GitHub</span>               :         <a class='link' href='" + github + "' target='_blank'>iamasit07</a>",
+    "<span class='commands'>Codeforces</span>           :         <a class='link' href='" + codeforces + "' target='_blank'>who_is_asit07</a>",
+    "<span class='commands'>LeetCode</span>             :         <a class='link' href='" + leetcode + "' target='_blank'>who_is_asit07</a>",
     "<br>"
 ]
 
 projects = [
     "<br>",
-    "This terminal-website is my first project, I am working on more projects and will update this list soon.",
-    "<br>"
-]
-
-email = [
-    "<br>",
-    Email,
+    "<span class='para padded'>This terminal-website is my first project, I am working on more projects and will update this list soon.</span>",
     "<br>"
 ]
 
 secret = [
     "<br>",
-    "\"Haha...Gotcha\", not the right command to find the Easter Egg. Try again.",
+    "<span class='para padded'>\"Haha...Gotcha\", not the right command to find the Easter Egg. Try again.</span>",
     "<br>"
 ]
 
 easterEgg = [
     "<br>",
-    "Sudo access granted. You have found the Easter Egg.",
-    "I wonder what you will do with this power...",
+    "<span class='para padded'>Sudo access granted. You have found the Easter Egg.</span>",
+    "<span class='para padded'>I wonder what you will do with this power...</span>",
     "<br>"
 ]
 
 banner = [
     "<br>",
-    " _____                   _             _   _    _      _         _ _       \n",
-    "|_   _|                 (_)           | | | |  | |    | |       (_) |      \n",
-    "  | | ___ _ __ _ __ ___  _ _ __   __ _| | | |  | | ___| |__  ___ _| |_ ___ \n",
-    "  | |/ _ \\ '__| '_ ` _ \\| | '_ \\ / _` | | | |/\\| |/ _ \\ '_ \\/ __| | __/ _ \\\n",
-    "  | |  __/ |  | | | | | | | | | | (_| | | \\  /\\  /  __/ |_) \\__ \\ | ||  __/\n",
-    "  \\_/\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|  \\/  \\/ \\___|_.__/|___/_|\\__\\___|\n",
+    "        _____                   _             _     _    _      _         _ _       \n",
+    "       |_   _|                 (_)           | |   | |  | |    | |       (_) |      \n",
+    "         | | ___ _ __ _ __ ___  _ _ __   __ _| |   | |  | | ___| |__  ___ _| |_ ___ \n",
+    "         | |/ _ \\ '__| '_ ` _ \\| | '_ \\ / _` | |   | |/\\| |/ _ \\ '_ \\/ __| | __/ _ \\\n",
+    "         | |  __/ |  | | | | | | | | | | (_| | |   \\  /\\  /  __/ |_) \\__ \\ | ||  __/\n",
+    "         \\_/\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|    \\/  \\/ \\___|_.__/|___/_|\\__\\___|\n",
     "                                                                           \n",
-    "by - Asit Upadhyay ",
-    "Welcome to my interactive web terminal.<br>",
+    "   <span class='para padded'>by - Asit Upadhyay </span>",
+    "   <span class='para padded'>Welcome to my interactive web terminal.</span><br>",
     "<br>",
-    "For a list of available commands, type \"help\".",
+    "<span class='para padded'>For a list of available commands, type \"help\".</span>",
     "\n"
 ]
 
 sudo = [
     "<br>",
-    "I am sorry, I cannot allow you to do that. You are not authorized to use this command. But you can enjoy this...",
+    "<span class='para padded'>I am sorry, I cannot allow you to do that. You are not authorized to use this command. But you can enjoy this...</span>",
     "<br>"
 ]
 
 exit = [
     "<br>",
-    "Goodbye! See you soon.",
-    "Close the tab on your way out",
+    "<span class='para padded'>Goodbye! See you soon.</span>",
+    "<span class='para padded'>Close the tab on your way out</span>",
     "<br>"
 ]
 
 error = [
     "<br>",
-    "Command not found. Type \"help\" for a list of available commands.",
+    "<span class='para padded'>Command not found. Type \"help\" for a list of available commands.</span>",
     "<br>"
 ]
