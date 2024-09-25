@@ -61,7 +61,14 @@ email = [
 
 secret = [
     "<br>",
-    "sudo             Use only if you know what you are doing",
+    "\"Haha...Gotcha\", not the right command to find the Easter Egg. Try again.",
+    "<br>"
+]
+
+easterEgg = [
+    "<br>",
+    "Sudo access granted. You have found the Easter Egg.",
+    "I wonder what you will do with this power...",
     "<br>"
 ]
 

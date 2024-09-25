@@ -1,7 +1,9 @@
+// Author: WhoisAsit'
+// constraints
 const content = document.getElementById('content');
 const command = document.getElementById('command');
 
-let container = [];
+let inputHistory = [];
 let num = 0;
 
 // Starting inputs
@@ -10,18 +12,22 @@ setTimeout(function(){
     content.focus();
 }, 100);
 
-
-window.addEventListener("keypress", keyStroke);
-
 function setInput(){
     command.innerHTML = intro;
     document.getElementById('input').focus();
 }
 
+
+window.addEventListener('keydown', keyStroke);
 setTimeout(setInput, 500);
 
+
+// Commands
 const cases = (inputVal) => {
     switch (inputVal){
+        case 'easter egg':
+            loopLines(easterEgg);
+            break;
         case 'whoisasit07':
             loopLines(whoisasit);
             break;
@@ -56,7 +62,7 @@ const cases = (inputVal) => {
             content.innerHTML = '';
             break;
         case 'history':
-            loopLines(container);
+            loopLines(inputHistory);
             break;
         default:
             loopLines(error);
@@ -65,42 +71,46 @@ const cases = (inputVal) => {
 }
 
 
-// Event Listener for Clicking on Terminal
+// Event Listener for commands and inputs
 function keyStroke(e){
     if(e.key === 'Reload'){
         document.location.reload();
     }
     else {
-        let inputVal = document.getElementById('input').value.toLowerCase();
-        if(e.keyCode === 13){
-            container.push(inputVal);
-            num++;
-
+        const inputVal = document.getElementById('input');
+        if(e.key === 'Enter'){
+            inputHistory.push(inputVal.value);
+            num = inputHistory.length;
             content.innerHTML += '<br>';
-            content.innerHTML += '<span>guest@terminal:~$ </span>' + inputVal;
-            cases(inputVal);
-            command.innerHTML ='';
+            content.innerHTML += '<span>guest@terminal:~$ </span>' + inputVal.value;
+            cases(inputVal.value.trim().toLowerCase());
+            inputVal.value = '';
             setTimeout(setInput, 700);
-            document.getElementById('input').value = '';
         }
-        if(e.keyCode === 38 && num > 0){
-            num--;
-            inputVal.value = container[num];
+        if(e.key === 'ArrowUp' && num > 0){
+            num -= 1;
+            inputVal.value = inputHistory[num];
         }
-        if(e.keyCode === 40 && num !== container.length){
-            num++;
-            if(container[num] === undefined)
+        if(e.key === 'ArrowDown'){
+            num += 1;
+            if(num >= inputHistory.length){
+                num = inputHistory.length;
                 inputVal.value = '';
+            }
             else
-                inputVal.value = container[num];
+                inputVal.value = inputHistory[num];
         }
+        moveCursorToEnd(inputVal);
     }
 }
 
 
-
 // Additional custom-made Functions
 
+function moveCursorToEnd(input) {
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+}
 
 function addText(text){
     let t = "";
@@ -115,7 +125,6 @@ function addText(text){
     setTimeout(function(){
         let next = document.createElement("p");
         next.innerHTML = t;
-        next.className = 'text-style';
         content.appendChild(next);
         window.scrollTo(0,document.body.scrollHeight);
     },500);
