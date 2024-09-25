@@ -3,14 +3,46 @@
 * {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
-    line-height: 0;
+    line-height: 0.2;
     color: #333;
 }
 
+body{
+    padding: 15px 20px;
+    background-color: #300A24;
+}
+
 .padded {
-    padding: 10px;
+    padding-left: 30px;
+}
+
+.admin {
+    color : #00FF00;
+}
+
+.user-input{
+    color : #FFFFFF;
+    background-color : transparent;
+    border : 0px;
+}
+
+.user-input:focus{
+    outline : none;
 }
 
 .para{
-    color : #333;
+    color : #FAF7F0;
+}
+
+.commands{
+    color : darkorange;
+}
+
+p{
+    color : #FFFFFF;
+}
+
+a{
+    color : white;
+    text-decoration: none;
 }

@@ -82,7 +82,7 @@ function keyStroke(e){
             inputHistory.push(inputVal.value);
             num = inputHistory.length;
             content.innerHTML += '<br>';
-            content.innerHTML += '<span>guest@terminal:~$ </span>' + inputVal.value;
+            content.innerHTML += '<span class="admin">guest@terminal:~$ </span><span class="user-input">' + inputVal.value + '</span>';
             cases(inputVal.value.trim().toLowerCase());
             inputVal.value = '';
             setTimeout(setInput, 700);
