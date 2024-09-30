@@ -9,61 +9,62 @@ let intro  = "<span class='admin'>guest@terminal:~$ </span><input class='user-in
 
 help = [
     "<br>",
-    "<span class='commands padded'>whoisasit07</span>              <span class='para'>Who is Asit Upadhyay? </span>",
-    "<span class='commands padded'>whoami</span>                   <span class='para'>Who am I?</span>",
-    "<span class='commands padded'>social</span>                   <span class='para'>Display all Social Networks</span>",
-    "<span class='commands padded'>projects</span>                 <span class='para'>Display all Projects</span>",
-    "<span class='commands padded'>secret</span>                   <span class='para'>Find the \"Easter Egg\"</span>",
-    "<span class='commands padded'>help</span>                     <span class='para'>Display all commands</span>",
-    "<span class='commands padded'>email</span>                    <span class='para'>Display my email</span>",
-    "<span class='commands padded'>clear</span>                    <span class='para'>Clear the terminal</span>",
-    "<span class='commands padded'>banner</span>                   <span class='para'>Display the banner</span>",
-    "<span class='commands padded'>exit</span>                     <span class='para'>Close the terminal</span>",
+    '<span class="commands padded">whoisasit07</span>                               <span class="para">Who is Asit Upadhyay?</span>',
+    '<span class="commands padded">whoami</span>                                    <span class="para">Who am I?</span>',
+    '<span class="commands padded">social</span>                                    <span class="para">Display all Social Networks</span>',
+    '<span class="commands padded">projects</span>                                  <span class="para">Display all Projects</span>',
+    '<span class="commands padded">secret</span>                                    <span class="para">Find the \"Easter Egg\"</span>',
+    '<span class="commands padded">help</span>                                      <span class="para">Display all commands</span>',
+    '<span class="commands padded">email</span>                                     <span class="para">Display my email</span>',
+    '<span class="commands padded">clear</span>                                     <span class="para">Clear the terminal</span>',
+    '<span class="commands padded">banner</span>                                    <span class="para">Display the banner</span>',
+    '<span class="commands padded">exit</span>                                      <span class="para">Close the terminal</span>',
     "<br>"
 ]
 
 whoisasit = [
     "<br>",
-    "<span class='para padded'>Hi, I am Asit Upadhyay, a Full Stack Developer from India.</span>",
-    "<span class='para padded'>I am a Computer Science student at the Meerut Institute of Engineering & Technology. I am passionate about Web Development, Problem Solving and Algorithms.</span>",
-    "<span class='para padded'>I am learning JavaScript at the time I created this side, and its a great way to learn by implementing. I hope you enjoy my peoject.</span>",
-    "<span class='para padded'>*Try and find the Easter Egg*</span>",
+    '<span class="para padded">Hi, I am Asit Upadhyay, a Full Stack Developer from India.</span>',
+    '<span class="para padded">I am a Computer Science student at the Meerut Institute of Engineering & Technology. I am passionate about Web Development, Problem-Solving and Algorithms.</span>',
+    '<span class="para padded">I am learning JavaScript at the time I created this side, and it is a great way to learn by implementing. I hope you enjoy my peoject.</span>',
+    '<span class="para padded">*Try and find the Easter Egg*</span>',
     "<br>"
 ]
 
 whoami = [
     "<br>",
-    "<span class='para padded'>The question \"Who am I?\" is not really meant to get an answer, the question \"Who am I?\" is meant to dissolve the questioner</span>",
+    '<span class="para padded">The question \"Who am I?\" is not really meant to get an answer, the question \"Who am I?\" is meant to dissolve the questioner</span>',
     "<br>"
 ]
 
 social = [
     "<br>",
-    "<span class='commands'>Instagram</span>            :         <a class='link' href='" + instagram + "' target='_blank'>who_is_asit07</a>",
-    "<span class='commands'>LinkedIn</span>             :         <a class='link' href='" + linkedin + "' target='_blank'>Asit Upadhyay</a>",
-    "<span class='commands'>GitHub</span>               :         <a class='link' href='" + github + "' target='_blank'>iamasit07</a>",
-    "<span class='commands'>Codeforces</span>           :         <a class='link' href='" + codeforces + "' target='_blank'>who_is_asit</a>",
-    "<span class='commands'>LeetCode</span>             :         <a class='link' href='" + leetcode + "' target='_blank'>who_is_asit07</a>",
+    '<span class="commands padded">Instagram</span>                                 <a class="link" href=' + instagram + ' target="_blank">who_is_asit07</a></span>',
+    '<span class="commands padded">LinkedIn</span>                                  <a class="link" href=' + linkedin + ' target="_blank">Asit Upadhyay</a></span>',
+    '<span class="commands padded">GitHub</span>                                    <a class="link" href=' + github + ' target="_blank">iamasit07</a></span>',
+    '<span class="commands padded">Codeforces</span>                                <a class="link" href=' + codeforces + ' target="_blank">who_is_asit</a></span>',
+    '<span class="commands padded">LeetCode</span>                                  <a class="link" href=' + leetcode + ' target="_blank">who_is_asit07</a></span>',
     "<br>"
 ]
 
 projects = [
     "<br>",
-    "<span class='para padded'>1. </span><a href='#'><span class='commands'>Terminal-Website</span></a>",
-    "<span class='para padded'>This terminal-website is my first project, I am working on more projects and will update this list soon.</span>",
+    '<span class="para padded">1. </span><a href="#"><span class="commands">Terminal-Website</span></a>',
+    '<span class="para padded">This terminal-website is my first project, I am working on more projects and will update this list soon.</span>',
     "<br>"
 ]
 
 secret = [
     "<br>",
-    "<span class='para padded'>\"Haha...Gotcha\", not the right command to find the Easter Egg. Try again.</span>",
+    '<span class="para padded">\"Haha...Gotcha\", not the right command to find the Easter Egg. Try again.</span>',
     "<br>"
 ]
 
 easterEgg = [
     "<br>",
-    "<span class='para padded'>Sudo access granted. You have found the Easter Egg.</span>",
-    "<span class='para padded'>I wonder what you will do with this power...</span>",
+    '<span class="para padded">Congratulations, you have found the Easter egg</span>',
+    '<span class="para padded"><span class="commands">Sudo</span> access granted...</span>',
+    '<span class="para padded">I wonder what you will do with this power...</span>',
     "<br>"
 ]
 
@@ -77,9 +78,10 @@ banner = [
     "         \\_/\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|    \\/  \\/ \\___|_.__/|___/_|\\__\\___|\n",
     "                                                                           \n",
     "                                                                <span class='para padded'>by - Asit Upadhyay </span>",
-    "           <span class='para padded'>Welcome to my interactive web terminal.</span><br>",
+    '           <span class="para padded">Welcome to my interactive web terminal.</span>',
     "<br>",
-    "<span class='para padded'>For a list of available commands, type </span><span class='commands'>\"help\".</span>",
+    "<br>",
+    '<span class="para padded">For a list of available commands, type </span><span class="commands">\"help\".</span>',
     "\n"
 ]
 
@@ -98,6 +100,43 @@ exit = [
 
 error = [
     "<br>",
-    "<span class='para padded'>Command not found. Type \"help\" for a list of available commands.</span>",
+    '<span class="para padded">Command not found. Type \"help\" for a list of available commands.</span>',
+    "<br>"
+]
+
+
+email = [
+    "<br>",
+    '<span>Opening Email...</span>',
+    "<br>"
+]
+
+instagramLines = [
+    "<br>",
+    '<span class="para padded">Opening Instagram...</span>',
+    "<br>"
+]
+
+linkedinLines = [
+    "<br>",
+    '<span class="para padded">Opening LinkedIn...</span>',
+    "<br>"
+]
+
+githubLines = [
+    "<br>",
+    '<span class="para padded">Opening GitHub...</span>',
+    "<br>"
+]
+
+codeforcesLines = [
+    "<br>",
+    '<span class="para padded">Opening Codeforces...</span>',
+    "<br>"
+]
+
+leetcodeLines = [
+    "<br>",
+    '<span class="para padded">Opening LeetCode...</span>',
     "<br>"
 ]
