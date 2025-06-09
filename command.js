@@ -65,8 +65,8 @@ secret = [
 
 easterEgg = [
     "<br>",
-    '<span class="para padded">Congratulations, you have found the Easter egg</span>',
-    '<span class="para padded"><span class="commands">Sudo</span> access granted...</span>',
+    '<span class="para padded" style="color:green">Congratulations, you have found the Easter egg</span>',
+    '<span class="para padded">You have unlocked the special command - <span class="commands">sudo</span></span>',
     '<span class="para padded">I wonder what you will do with this power...</span>',
     "<br>"
 ]
