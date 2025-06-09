@@ -48,7 +48,7 @@ const cases = (inputVal) => {
             break;
         case 'secret':
             loopLines(secret, 'para padded', 75);
-            console.log("\"\033[1;36mTry using the command \033[1;33m'easter egg'\033[0m \033[1;37mto find the \033[1;35mEaster Egg\033[0m\"");
+            console.log("\"\x1b[1;36mTry using the command \x1b[1;33m'easter egg'\x1b[0m \x1b[1;37mto find the \x1b[1;35mEaster Egg\x1b[0m\"");
             break;
         case 'banner':
             loopLines(banner, '', 75);
