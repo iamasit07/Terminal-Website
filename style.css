@@ -1,63 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.02em;
-    line-height: 0.2;
-    color: #333;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.02em;
+  line-height: 0.2;
+  color: #333;
+  box-sizing: border-box;
 }
 
-body{
-    padding: 1em 2em;
-    background-color: #300A24;
-    width: 100%;
-    height: 100%;
+body {
+  padding: 1em 2em;
+  background-color: #300a24;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-.terminal-container{
-    width: 100%;
-    height: 100%;
-    border: 0.5em;
+.terminal-container {
+  width: 100%;
+  height: 100%;
+  border: 0.5em;
 }
 
-table{
-    width: 100%;
-    border-spacing: 1em;
-    border-collapse: separate;
-    table-layout: fixed;
+table {
+  width: 100%;
+  border-spacing: 1em;
+  border-collapse: separate;
+  table-layout: fixed;
 }
 
 .padded {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .admin {
-    color : #00FF00;
+  color: #00ff00;
 }
 
-.user-input{
-    color : #FFFFFF;
-    background-color : transparent;
-    border : 0;
+/* Fix for input field alignment */
+.user-input {
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  width: auto;
+  min-width: 50%;
 }
 
-.user-input:focus{
-    outline : none;
+.user-input:focus {
+  outline: none;
 }
 
-.para{
-    color : #FAF7F0;
+/* Style for terminal prompt container to keep prompt and input on same line */
+.prompt-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
-.commands{
-    color : darkorange;
+.terminal-prompt {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 0.5em;
 }
 
-p{
-    color : #FFFFFF;
+.para {
+  color: #faf7f0;
 }
 
-a{
-    color : white;
-    text-decoration: none;
+.commands {
+  color: darkorange;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0.5em 1em;
+  }
+
+  * {
+    font-size: 0.9em;
+    line-height: 1.2;
+  }
+
+  .padded {
+    padding-left: 0.5em;
+  }
+
+  table {
+    border-spacing: 0.5em;
+  }
+
+  .user-input {
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.25em 0.5em;
+  }
+
+  * {
+    font-size: 0.8em;
+    line-height: 1.3;
+  }
+
+  .terminal-container {
+    border: 0.25em;
+  }
+
+  .padded {
+    padding-left: 0.25em;
+  }
+
+  /* Ensure text wraps properly on small screens */
+  .user-input {
+    min-width: 20%;
+  }
+
+  /* Better spacing for mobile */
+  p {
+    margin: 0.25em 0;
+  }
+
+  /* Adjust prompt layout on very small screens */
+  .prompt-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 0.75em;
+  }
+
+  body {
+    padding: 0.1em 0.25em;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  body {
+    padding: 0.5em 1em;
+  }
+
+  * {
+    line-height: 1.1;
+  }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding: 1.5em 2.5em;
+  }
+
+  * {
+    font-size: 1em;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 2em 4em;
+  }
+
+  .terminal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

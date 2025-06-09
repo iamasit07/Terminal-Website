@@ -7,12 +7,12 @@ let inputHistory = [];
 let num = 0;
 
 // Starting inputs
-setTimeout(function(){
+setTimeout(function () {
     loopLines(banner, '', 50);
     content.focus();
 }, 100);
 
-function setInput(){
+function setInput() {
     command.innerHTML = intro;
     document.getElementById('input').focus();
 }
@@ -23,37 +23,39 @@ setTimeout(setInput, 500);
 
 // Commands
 const cases = (inputVal) => {
-    switch (inputVal){
+    switch (inputVal) {
         case 'easter egg':
-            loopLines(easterEgg, 'para padded' , 75);
-            openLink('https://youtu.be/3UjuYtgMDIg?si=mi87aC5qcUCLZe9y', 800);
+            loopLines(easterEgg, 'para padded', 75);
             break;
         case 'whoisasit07':
-            loopLines(whoisasit,'', 75);
+            loopLines(whoisasit, '', 75);
             break;
         case 'whoami':
             loopLines(whoami, 'para padded', 75);
             break;
         case 'help':
-            loopLines(help,'', 75);
+            loopLines(help, '', 75);
             break;
         case 'social':
-            loopLines(social, '',75);
+            loopLines(social, '', 75);
             break;
         case 'projects':
-            loopLines(projects,'', 75);
+            loopLines(projects, '', 75);
             break;
         case 'email':
-            loopLines(email,"", 75);
+            loopLines(email, "", 75);
+            openLink(Email, 800);
             break;
         case 'secret':
             loopLines(secret, 'para padded', 75);
+            console.log("\"\033[1;36mTry using the command \033[1;33m'easter egg'\033[0m \033[1;37mto find the \033[1;35mEaster Egg\033[0m\"");
             break;
         case 'banner':
-            loopLines(banner,'', 75);
+            loopLines(banner, '', 75);
             break;
         case 'sudo':
             loopLines(sudo, 'para padded', 75);
+            openLink('https://youtu.be/3UjuYtgMDIg?si=mi87aC5qcUCLZe9y', 2000);
             break;
         case 'exit':
             loopLines(exit, 'para padded', 75);
@@ -66,23 +68,23 @@ const cases = (inputVal) => {
             loopLines(inputHistory, 'para padded', 75);
             break;
         case 'instagram':
-            loopLines(instagramLines,'para padded', 75);
+            loopLines(instagramLines, 'para padded', 75);
             openLink(instagram, 800);
             break;
         case 'linkedin':
-            loopLines(linkedinLines,"", 75);
+            loopLines(linkedinLines, "", 75);
             openLink(linkedin, 800);
             break;
         case 'github':
-            loopLines(githubLines,"", 75);
+            loopLines(githubLines, "", 75);
             openLink(github, 800);
             break;
         case 'codeforces':
-            loopLines(codeforcesLines, "",75);
+            loopLines(codeforcesLines, "", 75);
             openLink(codeforces, 800);
             break;
         case 'leetcode':
-            loopLines(leetcodeLines,"", 75);
+            loopLines(leetcodeLines, "", 75);
             openLink(leetcode, 800);
             break;
         default:
@@ -93,13 +95,13 @@ const cases = (inputVal) => {
 
 
 // Event Listener for commands and inputs
-function keyStroke(e){
-    if(e.key === 'Reload'){
+function keyStroke(e) {
+    if (e.key === 'Reload') {
         document.location.reload();
     }
     else {
         const inputVal = document.getElementById('input');
-        if(e.key === 'Enter'){
+        if (e.key === 'Enter') {
             inputHistory.push(inputVal.value);
             num = inputHistory.length;
             content.innerHTML += '<br>';
@@ -108,13 +110,13 @@ function keyStroke(e){
             inputVal.value = '';
             setTimeout(setInput, 700);
         }
-        if(e.key === 'ArrowUp' && num > 0){
+        if (e.key === 'ArrowUp' && num > 0) {
             num -= 1;
             inputVal.value = inputHistory[num];
         }
-        if(e.key === 'ArrowDown'){
+        if (e.key === 'ArrowDown') {
             num += 1;
-            if(num >= inputHistory.length){
+            if (num >= inputHistory.length) {
                 num = inputHistory.length;
                 inputVal.value = '';
             }
@@ -133,17 +135,17 @@ function moveCursorToEnd(input) {
     input.setSelectionRange(input.value.length, input.value.length);
 }
 
-function addText(text, style, speed){
+function addText(text, style, speed) {
     let t = "";
-    for(let i = 0;i<text.length;i++){
-        if(text.charAt(i) === " " && text.charAt(i+1) === " "){
+    for (let i = 0; i < text.length; i++) {
+        if (text.charAt(i) === " " && text.charAt(i + 1) === " ") {
             t += '&nbsp;&nbsp;';
             i++;
         }
         else
             t += text.charAt(i);
     }
-    setTimeout(function(){
+    setTimeout(function () {
         let next = document.createElement("p");
         next.innerHTML = t;
         next.className = style;
@@ -152,14 +154,14 @@ function addText(text, style, speed){
     }, speed);
 }
 
-function loopLines(text, style, speed){
+function loopLines(text, style, speed) {
     text.forEach((line, index) => {
-        addText(line, style,speed*index);
+        addText(line, style, speed * index);
     });
 }
 
-function openLink(link, speed){
-    setTimeout(function(){
+function openLink(link, speed) {
+    setTimeout(function () {
         window.open(link);
     }, speed);
 }

@@ -5,7 +5,7 @@ let codeforces = "https://codeforces.com/profile/Who_Is_Asit";
 let leetcode = "https://leetcode.com/u/who_is_asit07/";
 let Email = "mailto:asit.upadhyay793@gmail.com"
 let password = "PASSWORD"
-let intro  = "<span class='admin'>guest@terminal:~$ </span><input class='user-input' type='text' id='input' autofocus>";
+let intro = "<span class='admin'>guest@terminal:~$ </span><input class='user-input' type='text' id='input' autofocus>";
 
 help = [
     "<br>",
@@ -25,15 +25,18 @@ help = [
 whoisasit = [
     "<br>",
     '<span class="para padded">Hi, I am Asit Upadhyay, a Full Stack Developer from India.</span>',
-    '<span class="para padded">I am a Computer Science student at the Meerut Institute of Engineering & Technology. I am passionate about Web Development, Problem-Solving and Algorithms.</span>',
-    '<span class="para padded">I am learning JavaScript at the time I created this side, and it is a great way to learn by implementing. I hope you enjoy my peoject.</span>',
+    '<span class="para padded">I am a Computer Science student at the Meerut Institute of Engineering & Technology.</span>',
+    '<span class="para padded">I am passionate about Web Development, Problem-Solving and Algorithms </span>',
+    '<span class="para padded">I am learning JavaScript at the time I created this, I think its a great way to learn by doing,</span>',
+    '<span class="para padded">So here is my terminal website. I hope you enjoy.</span>',
     '<span class="para padded">*Try and find the Easter Egg*</span>',
     "<br>"
 ]
 
 whoami = [
     "<br>",
-    '<span class="para padded">The question \"Who am I?\" is not really meant to get an answer, the question \"Who am I?\" is meant to dissolve the questioner</span>',
+    '<span class="para padded">The question \"Who am I?\" is not really meant to get an answer </span>',
+    '<span class="para padded">The question \"Who am I?\" is meant to dissolve the questioner</span>',
     "<br>"
 ]
 
@@ -87,7 +90,7 @@ banner = [
 
 sudo = [
     "<br>",
-    "<span class='para padded'>I am sorry, I cannot allow you to do that. You are not authorized to use this command. But you can enjoy this...</span>",
+    "<span class='para padded'>I'm sorry, You are not authorized to use this command. But you can enjoy your easter egg...</span>",
     "<br>"
 ]
 
