@@ -6,7 +6,7 @@ Welcome to my **Terminal-Themed Portfolio Website**, a personal project built wi
 
 ### 🚀 Demo
 
-🔗 [Live Demo](https://iamasit07.github.io/Terminal-Website/](https://terminal-website-iamasit07.vercel.app/)  
+🔗 [Live Demo](https://terminal-website-iamasit07.vercel.app/)  
 📸 Preview:
 
 ![screenshot](./Images/Landing-page.png) <!-- Replace with an actual screenshot if you have one -->
