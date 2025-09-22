@@ -1,5 +1,4 @@
-let instagram = "https://www.instagram.com/who_is_asit07/";
-let linkedin = "https://www.linkedin.com/in/asit-upadhyay-5b469a207/";
+let linkedin = "https://www.linkedin.com/in/asit-upadhyay/";
 let github = "https://github.com/iamasit07";
 let codeforces = "https://codeforces.com/profile/Who_Is_Asit";
 let leetcode = "https://leetcode.com/u/who_is_asit07/";
@@ -42,7 +41,6 @@ whoami = [
 
 social = [
     "<br>",
-    '<span class="commands padded">Instagram</span>                                 <a class="link" href=' + instagram + ' target="_blank">who_is_asit07</a></span>',
     '<span class="commands padded">LinkedIn</span>                                  <a class="link" href=' + linkedin + ' target="_blank">Asit Upadhyay</a></span>',
     '<span class="commands padded">GitHub</span>                                    <a class="link" href=' + github + ' target="_blank">iamasit07</a></span>',
     '<span class="commands padded">Codeforces</span>                                <a class="link" href=' + codeforces + ' target="_blank">who_is_asit</a></span>',
