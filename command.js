@@ -57,6 +57,22 @@ projects = [
     '<span class="para padded">communication, enabling users to input text or URLs and instantly receive credibility evaluations powered by ML models. </span>',
     '<span class="para padded">This project highlights my skills in full-stack development, API integration, and applying AI to solve real-world problems.</span>',
     "<br>",
+    '<span class="para padded">4. </span><a href="https://pokemon-cards-black.vercel.app/" target="_blank"><span class="commands">Pokémon Explorer</span></a>',
+    '<span class="para padded">Pokémon Explorer is an interactive React.js application that lets users discover and explore Pokémon using the </span>',
+    '<span class="para padded">PokéAPI. With features like type-based filtering, detailed Pokémon stats, and responsive card layouts, it provides </span>',
+    '<span class="para padded">a smooth and engaging browsing experience. Built with React 18, Vite, TailwindCSS, and Lucide React, the app </span>',
+    '<span class="para padded">allows users to search, filter by multiple types, and view key details such as height, weight, and abilities. Its </span>',
+    '<span class="para padded">clean design and efficient data handling showcase my ability to build modern, responsive interfaces connected to </span>',
+    '<span class="para padded">real-world APIs.</span>',
+    "<br>",
+    '<span class="para padded">5. </span><a href="https://todo-draggable-mu.vercel.app/" target="_blank"><span class="commands">Todo Draggable</span></a>',
+    '<span class="para padded">Todo Draggable is a Kanban-style task management application that enables users to create, organize, and track </span>',
+    '<span class="para padded">tasks using draggable cards across customizable columns. It supports priorities, task statistics, due dates, and </span>',
+    '<span class="para padded">uses LocalStorage for persistent data. Built with React, Vite, and TailwindCSS, it features a modern, responsive </span>',
+    '<span class="para padded">interface and intuitive drag-and-drop functionality for seamless task management. With utilities for time formatting </span>',
+    '<span class="para padded">and status tracking, the app highlights my skills in building interactive UIs, state handling, and delivering </span>',
+    '<span class="para padded">practical productivity solutions.</span>',
+    "<br>",
     '<span class="para padded">2. </span><a href="https://terminal-website-iamasit07.vercel.app/" target="_blank"><span class="commands">Terminal Website</span></a>',
     '<span class="para padded">The Terminal Website is a unique, interactive personal portfolio designed to mimic a command-line interface. Built using </span>',
     '<span class="para padded">HTML, CSS, and JavaScript, it allows visitors to explore my skills, projects, and contact information in an engaging way.</span>',
@@ -71,7 +87,7 @@ projects = [
     '<span class="para padded">built on a React, Vite, TailwindCSS, and Zustand frontend for responsive performance. Deployed on Vercel with </span>',
     '<span class="para padded">GitHub version control, MeetSync AI demonstrates my ability to integrate AI, design scalable systems, and develop </span>',
     '<span class="para padded">practical solutions for real-world organizational needs.</span>',
-    "<br>"
+    "<br>",
 ]
 
 secret = [
