@@ -52,8 +52,27 @@ social = [
 
 projects = [
     "<br>",
-    '<span class="para padded">1. </span><a href="#"><span class="commands">Terminal-Website</span></a>',
-    '<span class="para padded">This terminal-website is my first project, I am working on more projects and will update this list soon.</span>',
+    '<span class="para padded">1. </span><a href="https://fake-news-detector-8fy4.onrender.com/" target="_blank"><span class="commands">Fake News Detector</span></a>',
+    '<span class="para padded">The Fake News Detector is an AI-powered web application designed to verify the authenticity of news articles in real time.</span>',
+    '<span class="para padded">It combines a Python backend with uAgents and Poetry for intelligent text analysis and classification, </span>',
+    '<span class="para padded">while a React and TailwindCSS frontend ensures a smooth user experience. REST APIs connect the two layers for seamless </span>',
+    '<span class="para padded">communication, enabling users to input text or URLs and instantly receive credibility evaluations powered by ML models. </span>',
+    '<span class="para padded">This project highlights my skills in full-stack development, API integration, and applying AI to solve real-world problems.</span>',
+    "<br>",
+    '<span class="para padded">2. </span><a href="https://terminal-website-iamasit07.vercel.app/" target="_blank"><span class="commands">Terminal Website</span></a>',
+    '<span class="para padded">The Terminal Website is a unique, interactive personal portfolio designed to mimic a command-line interface. Built using </span>',
+    '<span class="para padded">HTML, CSS, and JavaScript, it allows visitors to explore my skills, projects, and contact information in an engaging way.</span>',
+    '<span class="para padded"> With a fully responsive layout, it provides a seamless experience across devices while maintaining high performance and </span>',
+    '<span class="para padded">accessibility. The project showcases my creativity in web design, ability to implement user-friendly interactions, and </span>',
+    '<span class="para padded">commitment to delivering optimized, modern web applications.</span>',
+    "<br>",
+    '<span class="para padded">3. </span><a href="https://meetsyncai.vercel.app/" target="_blank"><span class="commands">MeetSync AI</span></a>',
+    '<span class="para padded">MeetSync AI is a meeting management platform that streamlines scheduling, summaries, recordings, and content </span>',
+    '<span class="para padded">sharing. It leverages AI transcription and NLP to convert audio into concise, accurate summaries, enhancing </span>',
+    '<span class="para padded">productivity and collaboration. The platform features secure workflows with private routes and shareable content,</span>',
+    '<span class="para padded">built on a React, Vite, TailwindCSS, and Zustand frontend for responsive performance. Deployed on Vercel with </span>',
+    '<span class="para padded">GitHub version control, MeetSync AI demonstrates my ability to integrate AI, design scalable systems, and develop </span>',
+    '<span class="para padded">practical solutions for real-world organizational needs.</span>',
     "<br>"
 ]
 

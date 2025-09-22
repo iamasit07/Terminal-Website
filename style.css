@@ -14,6 +14,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .terminal-container {
@@ -99,10 +100,12 @@ a {
 
   table {
     border-spacing: 0.5em;
+    width: 100%;
   }
 
   .user-input {
     min-width: 30%;
+    max-width: 100%;
   }
 }
 
@@ -124,17 +127,16 @@ a {
     padding-left: 0.25em;
   }
 
-  /* Ensure text wraps properly on small screens */
   .user-input {
     min-width: 20%;
+    max-width: 100%;
   }
 
-  /* Better spacing for mobile */
   p {
     margin: 0.25em 0;
+    word-wrap: break-word;
   }
 
-  /* Adjust prompt layout on very small screens */
   .prompt-container {
     flex-wrap: wrap;
   }
